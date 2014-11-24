@@ -1,0 +1,55 @@
+{
+    "html": {
+        "dir": "views"
+    },
+    "php": {
+        "dir": "views/src"
+    },
+
+    "css" : {
+        "dir": "css",
+        "file": "app.css"
+    },
+    "scss": {
+        "dir": "scss",
+        "file": "app.scss",
+        "includePaths": "bower_components/foundation/scss"
+    },
+
+    "js": {
+        "dir": "js",
+        "file": "script.js"
+    },
+    "script": {
+        "dir": "script"
+    },
+
+    "sprite": {
+        "svg": {
+            "dir": "sprite/svg",
+            "prefix": "icon-"
+        },
+        "png": {
+            "dir": "sprite/png"
+        }
+    },
+    "image": {
+        "dir": "images"
+    },
+
+    "bundle": {
+        "namespace": "YOU-KNOW"
+    },
+
+    "server": {
+        "snce": {
+            "hostname": "YOU-KNOW",
+            "username": "YOU-KNOW",
+            "password": "YOU-KNOW",
+            "project": {
+                "dir": "YOU-KNOW",
+                "name": "YOU-KNOW"
+            }
+        }
+    }
+}
