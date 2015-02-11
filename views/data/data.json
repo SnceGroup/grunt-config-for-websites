@@ -1,0 +1,16 @@
+{
+  "sample": [
+    {
+      "title": "Sample post 1",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+      "title": "Sample post 2",
+      "content": "Fugiat enim, at sit natus temporibus maxime repudiandae."
+    },
+    {
+      "title": "Sample post 3",
+      "content": "Fugiat enim, at sit natus temporibus maxime repudiandae."
+    }
+  ]
+}

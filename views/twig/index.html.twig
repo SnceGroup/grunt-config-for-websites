@@ -1,0 +1,38 @@
+{% extends "fragments/base.html.twig" %}
+
+{% block content %}
+
+<h1>Grunt tasks</h1>
+
+<div class="task">
+    <h2>grunt-sass</h2>
+    <p class="green">If sass is compiled, this text should be green</p>
+
+    <p>image-url variable:</p>
+    <div class="totoro"></div>
+</div>
+
+<div class="task">
+    <h2>grunt-svg-sprite</h2>
+    <a class="icon icon-factory"></a>
+</div>
+
+<div class="task">
+    <h2>grunt-contrib-jshint, grunt-contrib-uglify</h2>
+    <p id="script-01">Script 01: make this text green</p>
+    <p id="script-02">Script 02: make this text bold</p>
+    <p id="script-03">Script 03: make this text blue</p>
+</div>
+
+<div class="task">
+    <h2>twigRender</h2>
+    <p>If html is compiled, you should see 3 elements in list</p>
+
+    <ul>
+        {% for post in sample %}
+            <li>{{ post.title }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
