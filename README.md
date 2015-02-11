@@ -16,3 +16,7 @@ These are the requirements of the host machine. The guide is intended for Mac OS
 
 
 ##Settings
+
+
+##Credits
+Ballicons 2 icons released under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/) by [Pixel Buddha](http://pixelbuddha.net/)
