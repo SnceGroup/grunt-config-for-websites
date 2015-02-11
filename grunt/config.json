@@ -31,7 +31,7 @@
     "sprite": {
         "svg": {
             "dir": "sprite/svg",
-            "prefix": "icon-"
+            "prefix": ".icon--"
         },
         "png": {
             "dir": "sprite/png"

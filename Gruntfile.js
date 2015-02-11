@@ -8,7 +8,6 @@ module.exports = function(grunt) {
 
     //load tasks when they are needed
     require('jit-grunt')(grunt, {
-        svgsprite: 'grunt-svg-sprite',
         validation: 'grunt-html-validation',
         sftp: 'grunt-ssh'
     });
@@ -19,7 +18,7 @@ module.exports = function(grunt) {
 
 
     //custom tasks
-    grunt.registerTask('buildimages', ['newer:imagemin:main', 'svgsprite:mainsprite']);
+    grunt.registerTask('buildimages', ['newer:imagemin:main', 'grunticon:mainsprite']);
     grunt.registerTask('buildcss', ['sass:dist', 'autoprefixer', 'cssmin', 'csslint']);
     grunt.registerTask('buildjs', ['newer:jshint:target', 'uglify']);
     grunt.registerTask('buildhtml', ['twigRender:dest', 'newer:validation:files']);

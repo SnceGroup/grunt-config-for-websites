@@ -1,20 +1,21 @@
 module.exports = function(grunt) {
 
-    //grunt-svg-sprite
-    grunt.config('svgsprite', {
-        options: {
-            common: "icon",
-            prefix: '<%= config.sprite.svg.prefix  %>',
-            spritedir: '../<%= config.image.dir  %>',
-            render: {
-                css: false,
-                scss: '../scss/sprite/_sprite-svg'
-            },
-            cleanwith: 'svgo'
-        },
+    //grunt-grunticon
+    grunt.config('grunticon', {
         mainsprite: {
-            src: '<%= config.sprite.svg.dir  %>',
-            dest: '<%= config.image.dir  %>'
+            files: [{
+                expand: true,
+                cwd: '<%= config.sprite.svg.dir  %>',
+                src: ['*.svg', '*.png'],
+                dest: "<%= config.image.dir  %>/sprite"
+            }],
+            options: {
+                enhanceSVG: false, //Activate this if you need data-grunticon-embed option
+                datasvgcss: '_icons-svg.scss',
+                datapngcss: '_icons-png.scss',
+                urlpngcss: '_icons-fallback.scss',
+                cssprefix: '<%= config.sprite.svg.prefix  %>'
+            }
         }
     });
 
