@@ -1,5 +1,18 @@
 module.exports = function(grunt) {
 
+    //grunt-svgmin
+    grunt.config('svgmin', {
+        dist: {
+            files: [{
+                expand: true,
+                cwd: '<%= config.sprite.svg.dir  %>',
+                src: ['*.svg'],
+                dest: '<%= config.sprite.svg.dir  %>'
+            }]
+        }
+    });
+
+
     //grunt-grunticon
     grunt.config('grunticon', {
         mainsprite: {

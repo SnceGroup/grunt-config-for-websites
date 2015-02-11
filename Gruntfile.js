@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 
 
     //custom tasks
-    grunt.registerTask('buildimages', ['newer:imagemin:main', 'grunticon:mainsprite']);
+    grunt.registerTask('buildimages', ['newer:svgmin:dist', 'newer:imagemin:main', 'grunticon:mainsprite']);
     grunt.registerTask('buildcss', ['sass:dist', 'autoprefixer', 'cssmin', 'csslint']);
     grunt.registerTask('buildjs', ['newer:jshint:target', 'uglify']);
     grunt.registerTask('buildhtml', ['twigRender:dest', 'newer:validation:files']);
