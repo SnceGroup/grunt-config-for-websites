@@ -1,0 +1,84 @@
+/* INCLUDE SVG SPRITE */
+@import "images/sprite/icons-svg";
+
+$green: #3db39e;
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+
+    /* FAKE STYLE */
+    h1 {
+        background-color: $green;
+        font-size: 30px;
+        font-weight: normal;
+        margin: 0;
+        padding: 20px 30px 19px 30px;
+        color: #ffffff;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 0 0 15px 0;
+    }
+
+    p {
+        font-size: 15px;
+        margin: 0 0 10px 0;
+
+        &.green {
+            color: $green;
+        }
+    }
+
+    ul {
+
+        li {
+            font-size: 15px;
+            margin: 5px 0;
+        }
+    }
+
+    .task {
+        border-bottom: 1px dotted $green;
+        padding: 20px 30px;
+    }
+
+
+    /* TEST IMG PATH */
+    .totoro {
+        width: 100px;
+        height: 100px;
+        background: image-url('sample.jpg') no-repeat 0 0;
+        background-size: 100px auto;
+    }
+
+
+    /* TEST SVG */
+    .icon {
+        background-size: 100% auto;
+    }
+
+    .icon--sample-1 {
+        display: block;
+        width: 100px;
+        height: 100px;
+        transition: all 0.5s;
+
+        &:hover {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+
+
+    /* TEST PNG */
+    .icon--check {
+        display: block;
+        //@include sprite($sample-1);
+    }
+}

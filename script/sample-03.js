@@ -1,0 +1,1 @@
+var script03 = document.getElementById('script-03').style.color = 'blue';

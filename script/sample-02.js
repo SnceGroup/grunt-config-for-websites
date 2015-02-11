@@ -1,0 +1,1 @@
+var script02 = document.getElementById('script-02').style.fontWeight = 'bold';
