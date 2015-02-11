@@ -17,7 +17,7 @@ module.exports = function(grunt) {
             tasks: ['buildcss']
         },
         html: {
-            files: '<%= config.html.dir  %>/**/*.{html,php}',
+            files: '<%= config.html.dir  %>/**/*.twig',
             tasks: ['buildhtml']
         }
     });

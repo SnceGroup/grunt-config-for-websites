@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     grunt.registerTask('buildimages', ['newer:imagemin:main', 'svgsprite:mainsprite']);
     grunt.registerTask('buildcss', ['sass:dist', 'autoprefixer', 'cssmin', 'csslint']);
     grunt.registerTask('buildjs', ['newer:jshint:target', 'uglify']);
-    grunt.registerTask('buildhtml', ['php2html:target', 'newer:validation:files']);
+    grunt.registerTask('buildhtml', ['twigRender:dest', 'newer:validation:files']);
 
     grunt.registerTask('build', ['buildimages', 'buildcss', 'buildjs', 'buildhtml']);
     grunt.registerTask('copyassets', ['copy:assets']);

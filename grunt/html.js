@@ -1,17 +1,18 @@
 module.exports = function(grunt) {
 
-    //grunt-php2html
-    grunt.config('php2html', {
-        options: {
-            serverPort: 8181,
-            htmlhintrc: 'grunt/.htmlhintrc'
-        },
-        target: {
-            expand: true,
-            cwd: '<%= config.php.dir  %>',
-            src: ['*.php'],
-            dest: '<%= config.html.dir  %>',
-            ext: '.html'
+    //grunt-twig-render
+    grunt.config('twigRender', {
+        dest: {
+            files: [
+                {
+                    data: '<%= config.twig.data.dir  %>/<%= config.twig.data.file  %>',
+                    expand: true,
+                    cwd: '<%= config.twig.dir  %>',
+                    src: ['*.twig'],
+                    dest: '<%= config.html.dir  %>',
+                    ext: '.html'
+                }
+            ]
         }
     });
 
