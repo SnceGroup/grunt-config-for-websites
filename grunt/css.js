@@ -4,6 +4,7 @@ module.exports = function(grunt) {
     grunt.config('sass', {
         options: {
             outputStyle: 'expanded',
+            //includePaths: ['<%= config.scss.includePaths  %>'],
             imagePath: '../<%= config.image.dir  %>'
         },
         dist: {
