@@ -23,7 +23,8 @@
 
     "js": {
         "dir": "js",
-        "file": "script.js"
+        "file": "script.js",
+        "fileExpanded": "script.expanded.js"
     },
     "script": {
         "dir": "script"

@@ -12,11 +12,24 @@ module.exports = function(grunt) {
     });
 
 
+    //grunt-contrib-concat
+    grunt.config('concat', {
+        expanded: {
+            src: ['<%= config.js.dir  %>/app.js', '<%= config.script.dir  %>/**/*.js'],
+            dest: '<%= config.js.dir  %>/<%= config.js.fileExpanded  %>'
+        }
+    });
+
+
     //grunt-contrib-uglify
     grunt.config('uglify', {
-        target: {
+        options: {
+            //compress: true,
+            //mangle: true
+        },
+        compressed: {
             files: {
-                '<%= config.js.dir  %>/<%= config.js.file  %>' : ['<%= config.js.dir  %>/app.js', '<%= config.script.dir  %>/**/*.js']
+                '<%= config.js.dir  %>/<%= config.js.file  %>' : ['<%= config.js.dir  %>/<%= config.js.fileExpanded  %>']
             }
         }
     });
