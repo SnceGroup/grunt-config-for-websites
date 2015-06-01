@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         },
         dist: {
             files: {
-                '<%= config.css.dir  %>/<%= config.css.file  %>': '<%= config.scss.dir  %>/<%= config.scss.file  %>'
+                '<%= config.css.dir  %>/<%= config.css.fileExpanded  %>': '<%= config.scss.dir  %>/<%= config.scss.file  %>'
             }
         }
     });
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         },
         dist: {
             files: {
-                '<%= config.css.dir  %>/<%= config.css.file  %>': '<%= config.css.dir  %>/<%= config.css.file  %>'
+                '<%= config.css.dir  %>/<%= config.css.fileExpanded  %>': '<%= config.css.dir  %>/<%= config.css.fileExpanded  %>'
             }
         }
     });
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     //grunt-contrib-cssmin
     grunt.config('cssmin', {
         target: {
-            src: '<%= config.css.dir  %>/<%= config.css.file  %>',
+            src: '<%= config.css.dir  %>/<%= config.css.fileExpanded  %>',
             dest: '<%= config.css.dir  %>/<%= config.css.file  %>'
         }
     });
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
             csslintrc: 'grunt/.csslintrc'
         },
         strict: {
-            src: ['<%= config.css.dir  %>/*.css']
+            src: ['<%= config.css.dir  %>/<%= config.css.file  %>']
         }
     });
 };

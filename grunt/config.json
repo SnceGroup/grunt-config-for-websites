@@ -12,7 +12,8 @@
 
     "css" : {
         "dir": "css",
-        "file": "app.css"
+        "file": "app.css",
+        "fileExpanded": "app.expanded.css"
     },
     "scss": {
         "dir": "scss",
