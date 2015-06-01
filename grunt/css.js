@@ -5,7 +5,8 @@ module.exports = function(grunt) {
         options: {
             outputStyle: 'expanded',
             //includePaths: ['<%= config.scss.includePaths  %>'],
-            imagePath: '../<%= config.image.dir  %>'
+            imagePath: '../<%= config.image.dir  %>',
+            sourceComments: true
         },
         dist: {
             files: {
