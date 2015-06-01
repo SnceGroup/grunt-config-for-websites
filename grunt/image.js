@@ -33,21 +33,6 @@ module.exports = function(grunt) {
     });
 
 
-    //css-sprite
-    grunt.config('css_sprite', {
-        options: {
-            'processor': 'scss'
-        },
-        sprite: {
-            options: {
-                'style': 'scss/sprite/_sprite-png.scss'
-            },
-            src: '<%= config.sprite.png.dir  %>/**/*',
-            dest: '<%= config.image.dir  %>/sprite'
-        }
-    });
-
-
     //grunt-contrib-imagemin
     grunt.config('imagemin', {
         main: {
