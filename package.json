@@ -1,29 +1,41 @@
 {
-    "name": "foundation-libsass-template",
-    "version": "0.0.1",
+    "name": "snce-grunt-config-for-websites",
+    "version": "0.1.0",
+    "description": "Grunt configuration for websites front end development",
+    "author": "Alberto Terragni <alberto.terragni@sncegroup.ch>",
     "repository": {
         "type": "git",
-        "url": "https://github.com/zurb/foundation-libsass-template.git"
+        "url": "https://github.com/SnceGroup/grunt-config-for-websites"
     },
+    "bugs": {
+        "url": "https://github.com/SnceGroup/grunt-config-for-websites/issues"
+    },
+    "keywords": [
+        "grunt",
+        "foundation",
+        "symfony"
+    ],
+    "license": "MIT",
     "devDependencies": {
+        "autoprefixer-core": "^5.2.1",
         "grunt": "^0.4.5",
-        "grunt-autoprefixer": "^3.0.1",
         "grunt-contrib-concat": "^0.5.1",
         "grunt-contrib-copy": "^0.8.0",
-        "grunt-contrib-csslint": "^0.4.0",
-        "grunt-contrib-cssmin": "^0.12.3",
+        "grunt-contrib-csslint": "^0.5.0",
+        "grunt-contrib-cssmin": "^0.13.0",
         "grunt-contrib-imagemin": "^0.9.4",
         "grunt-contrib-jshint": "^0.11.2",
         "grunt-contrib-uglify": "^0.9.1",
         "grunt-contrib-watch": "^0.6.1",
-        "grunt-grunticon": "^2.1.6",
+        "grunt-grunticon": "^2.2.1",
         "grunt-html-validation": "^0.1.18",
-        "grunt-newer": "^1.1.0",
+        "grunt-newer": "^1.1.1",
+        "grunt-postcss": "^0.5.5",
         "grunt-sass": "^1.0.0",
-        "grunt-ssh": "^0.12.3",
+        "grunt-ssh": "^0.12.6",
         "grunt-svgmin": "^2.0.1",
         "grunt-twig-render": "^1.7.2",
         "jit-grunt": "^0.9.1",
-        "jshint-stylish": "^2.0.0"
+        "jshint-stylish": "^2.0.1"
     }
 }
