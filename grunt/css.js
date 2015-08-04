@@ -15,10 +15,12 @@ module.exports = function(grunt) {
     });
 
 
-    //grunt-autoprefixer
-    grunt.config('autoprefixer', {
+    //grunt-postcss
+    grunt.config('postcss', {
         options: {
-            browsers: ['> 1%', 'last 2 versions', 'ie 8', 'ie 9', 'ie 10']
+            processors: [
+                require('autoprefixer-core')({browsers: ['> 1%', 'last 2 versions', 'ie 8', 'ie 9', 'ie 10']})
+            ]
         },
         dist: {
             files: {
