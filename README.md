@@ -17,7 +17,7 @@ These are the requirements of the host machine. The guide is intended for Mac OS
 ###With Foundation
 
  - Create Foundation project: `foundation new project_name --libsass`
- - If you're using Symfony (or eZ Publish), create the project in the Symfony root. Name the project `tpl`
+ - If you're using Symfony (or eZ Publish), move the project folder in the Symfony root. Rename it as `tpl`
  - Delete `Gruntfile.js` and `package.json`. If present, delete the `node_modules` folder
  - Copy and paste all grunt configuration files in the project. Don't override the `sass` folder
  - Install Node.js modules: `[sudo] npm install`
@@ -25,6 +25,7 @@ These are the requirements of the host machine. The guide is intended for Mac OS
 ###Without Foundation
 
  - Download grunt configuration
+ - If you're using Symfony (or eZ Publish), move the configuration folder in the Symfony root. Rename it as `tpl`
  - Install Node.js modules: `[sudo] npm install`
 
 ##Settings
