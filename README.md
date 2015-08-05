@@ -5,15 +5,27 @@ Grunt configuration for websites front end development. The configuration is tai
 ##Requirements
 These are the requirements of the host machine. The guide is intended for Mac OS X users.
 
- - [Node.js](http://nodejs.org)
- - [npm](https://www.npmjs.com): `npm install -g npm`
- - [Bower](http://bower.io): `npm install -g bower`
- - [Grunt](http://gruntjs.com) CLI: `npm install -g grunt-cli`
+ - [Node.js](http://nodejs.org): use the installer provided on the Node.js website
+ - [npm](https://www.npmjs.com): `[sudo] npm install -g npm`
+ - [Bower](http://bower.io): `[sudo] npm install -g bower`
+ - [Grunt](http://gruntjs.com) CLI: `[sudo] npm install -g grunt-cli`
  - (optional) [Foundation](http://foundation.zurb.com) CLI: `gem install foundation`
 
 
 ##Installation
 
+###With Foundation
+
+ - Create Foundation project: `foundation new project_name --libsass`
+ - If you're using Symfony (or eZ Publish), create the project in the Symfony root. Name the project `tpl`
+ - Delete `Gruntfile.js` and `package.json`. If present, delete the `node_modules` folder
+ - Copy and paste all grunt configuration files in the project. Don't override the `sass` folder
+ - Install Node.js modules: `[sudo] npm install`
+
+###Without Foundation
+
+ - Download grunt configuration
+ - Install Node.js modules: `[sudo] npm install`
 
 ##Settings
 
