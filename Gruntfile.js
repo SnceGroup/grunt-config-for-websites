@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
     //load tasks when they are needed
     require('jit-grunt')(grunt, {
-        validation: 'grunt-html-validation',
+        validation: 'grunt-w3c-html-validation',
         sftp: 'grunt-ssh'
     });
 

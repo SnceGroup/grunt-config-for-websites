@@ -17,12 +17,13 @@ module.exports = function(grunt) {
     });
 
 
-    //grunt-html-validation
+    //grunt-w3c-html-validation
     grunt.config('validation', {
         options: {
             reset: true,
             stoponerror: false,
-            reportpath: false
+            reportpath: false,
+            generateReport: false
         },
         files: {
             src: '<%= config.html.dir  %>/*.html'
