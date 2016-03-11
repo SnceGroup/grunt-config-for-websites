@@ -32,11 +32,13 @@
 
     "sprite": {
         "svg": {
+            "dest": "sprite",
             "dir": "sprite/svg",
-            "prefix": ".icon--"
+            "file": "icons.svg"
         },
-        "png": {
-            "dir": "sprite/png"
+        "data" : {
+            "dir": "sprite/data",
+            "file": "metadata.yml"
         }
     },
     "image": {

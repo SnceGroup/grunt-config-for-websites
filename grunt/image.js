@@ -1,38 +1,5 @@
 module.exports = function(grunt) {
 
-    //grunt-svgmin
-    grunt.config('svgmin', {
-        dist: {
-            files: [{
-                expand: true,
-                cwd: '<%= config.sprite.svg.dir  %>',
-                src: ['*.svg'],
-                dest: '<%= config.sprite.svg.dir  %>'
-            }]
-        }
-    });
-
-
-    //grunt-grunticon
-    grunt.config('grunticon', {
-        mainsprite: {
-            files: [{
-                expand: true,
-                cwd: '<%= config.sprite.svg.dir  %>',
-                src: ['*.svg', '*.png'],
-                dest: "<%= config.image.dir  %>/sprite"
-            }],
-            options: {
-                enhanceSVG: false, //Activate this if you need data-grunticon-embed option
-                datasvgcss: '_icons-svg.scss',
-                datapngcss: '_icons-png.scss',
-                urlpngcss: '_icons-fallback.scss',
-                cssprefix: '<%= config.sprite.svg.prefix  %>'
-            }
-        }
-    });
-
-
     //grunt-contrib-imagemin
     grunt.config('imagemin', {
         main: {
@@ -42,6 +9,29 @@ module.exports = function(grunt) {
                 src: '**/*.{png,jpg,jpeg,gif}',
                 dest: '<%= config.image.dir  %>'
             }]
+        }
+    });
+
+
+    //grunt-svg-sprite
+    grunt.config('svg_sprite', {
+        options: {
+            shape: {
+                meta: '<%= config.sprite.data.dir %>/<%= config.sprite.data.file %>'
+            },
+            mode: {
+                symbol: {
+                    dest: '<%= config.sprite.svg.dest %>',
+                    prefix: "svg-%s",
+                    sprite: '<%= config.sprite.svg.file %>'
+                }
+            }
+        },
+        main: {
+            expand: true,
+            cwd: '<%= config.sprite.svg.dir %>',
+            src: ['**/*.svg'],
+            dest: "<%= config.image.dir %>"
         }
     });
 };
