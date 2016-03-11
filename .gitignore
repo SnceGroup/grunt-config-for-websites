@@ -1,2 +1,11 @@
 /.idea/*
+/css/*
+/images/symbol/*
+/js/*
+/node_modules/*
+/views/*
+!/views/data
+!/views/twig
 *.DS_Store
+npm-debug.log
+validation-status.json
