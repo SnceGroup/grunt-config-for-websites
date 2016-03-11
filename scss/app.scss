@@ -1,6 +1,3 @@
-/* INCLUDE SVG SPRITE */
-@import "images/sprite/icons-svg";
-
 $green: #3db39e;
 $image-base-path: "../images";
 
@@ -52,7 +49,7 @@ body {
 
 
     /* TEST IMG PATH */
-    .totoro {
+    .sample {
         width: 100px;
         height: 100px;
         background: url('#{$image-base-path}/sample.jpg') no-repeat 0 0;
@@ -75,12 +72,5 @@ body {
             -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
         }
-    }
-
-
-    /* TEST PNG */
-    .icon--check {
-        display: block;
-        //@include sprite($sample-1);
     }
 }
