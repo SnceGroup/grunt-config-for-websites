@@ -69,7 +69,6 @@ body {
         transition: all 0.5s;
 
         &:hover {
-            -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
         }
     }

@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     grunt.config('postcss', {
         options: {
             processors: [
-                require('autoprefixer-core')({browsers: ['> 1%', 'last 2 versions', 'ie 8', 'ie 9', 'ie 10']})
+                require('autoprefixer')({browsers: ['> 1%', 'last 2 versions', 'ie 8', 'ie 9', 'ie 10']})
             ]
         },
         dist: {
