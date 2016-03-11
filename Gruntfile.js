@@ -24,7 +24,6 @@ module.exports = function(grunt) {
     grunt.registerTask('buildhtml', ['twigRender:dest', 'newer:validation:files']);
 
     grunt.registerTask('build', ['buildimages', 'buildcss', 'buildjs', 'buildhtml']);
-    grunt.registerTask('copyassets', ['copy:assets']);
     grunt.registerTask('deploytpl', ['sftp:deployhtml']);
 
     grunt.registerTask('default', ['build','watch']);
