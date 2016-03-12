@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.config('sass', {
         options: {
             outputStyle: 'expanded',
-            //includePaths: ['<%= config.scss.includePaths  %>'],
+            includePaths: '<%= config.scss.includePaths  %>',
             sourceComments: true
         },
         dist: {

@@ -18,7 +18,10 @@
     "scss": {
         "dir": "scss",
         "file": "app.scss",
-        "includePaths": "bower_components/foundation/scss"
+        "includePaths": [
+            "bower_components/foundation-sites/scss",
+            "bower_components/motion-ui"
+        ]
     },
 
     "js": {
