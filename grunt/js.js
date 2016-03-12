@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     //grunt-contrib-concat
     grunt.config('concat', {
         expanded: {
-            src: ['<%= config.js.dir  %>/app.js', '<%= config.script.dir  %>/**/*.js'],
+            src: ['<%= config.script.dir  %>/**/*.js'],
             dest: '<%= config.js.dir  %>/<%= config.js.fileExpanded  %>'
         }
     });
